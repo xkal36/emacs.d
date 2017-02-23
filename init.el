@@ -13,10 +13,12 @@
 (require 'company-quickhelp)
 (require 'jedi)
 
+(require 'powerline)
+
 ;;(load "elscreen.el")
 (load "fullscreen.el")
 (load "virtualenv.el")
-(load "highlight-beyond-fill-column")
+;;(load "highlight-beyond-fill-column")
 (load "unbound")
 
 (require 'auto-complete)
@@ -40,12 +42,12 @@
 
 
 ;; Set your lisp system and, optionally, some contribs
- (setq inferior-lisp-program "/usr/bin/sbcl")
+(setq inferior-lisp-program "/usr/bin/sbcl")
 
 (require 'slime)
 (setq slime-contribs '(slime-fancy))
 
-
+(set-face-attribute 'mode-line nil  :height 80)
 
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file 'noerror)
@@ -78,8 +80,8 @@
                (reusable-frames . visible)
                (side            . bottom)
                (window-height   . 0.4)))
-               
-               
+
+
 (setq-default fill-column 80)
 (add-hook 'prog-mode-hook 'highlight-beyond-fill-column)
 
@@ -138,3 +140,123 @@
 
 ;; Uncomment this to change JS indentation settings:
 ;;(load "~/.emacs.d/init-js-settings.el")
+
+;; allow emacs to find node modules:
+(setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
+(add-to-list 'exec-path "/usr/local/bin")
+
+;;(require 'flymake-jshint)
+
+
+(add-hook
+ 'eshell-mode-hook
+ (lambda ()
+   (setenv "TERM" "emacs") ; enable colors
+   ))
+
+
+;; Keep line numbers same size when changing font size in editor:
+(eval-after-load "linum"
+  '(set-face-attribute 'linum nil :height 100))
+
+
+;; setting window size upon startup
+(when window-system (set-frame-size (selected-frame) 230 60))
+
+(defun window-system-name()
+  (cond ((eq system-type 'gnu/linux) (if (display-graphic-p) "x"   "nox"))
+        ((eq system-type 'darwin)    (if (display-graphic-p) "mac" "nox"))
+        (t (error "Unsupported window-system") nil)))
+
+
+(add-hook
+ 'eshell-mode-hook
+ (lambda ()
+   (setenv "TERM" "emacs") ; enable colors
+   ))
+
+;; eslint settings:
+
+;; use web-mode for .jsx files
+(add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
+
+;; http://www.flycheck.org/manual/latest/index.html
+(require 'flycheck)
+
+
+;; flycheck is already turned on globally
+
+;; disable jshint since we prefer eslint checking
+(setq-default flycheck-disabled-checkers
+              (append flycheck-disabled-checkers
+                      '(javascript-jshint)))
+
+;; use eslint with web-mode for jsx files
+(flycheck-add-mode 'javascript-eslint 'web-mode)
+
+;; customize flycheck temp file prefix
+(setq-default flycheck-temp-prefix ".flycheck")
+
+;; disable json-jsonlist checking for json files
+(setq-default flycheck-disabled-checkers
+              (append flycheck-disabled-checkers
+                      '(json-jsonlist)))
+
+;; https://github.com/purcell/exec-path-from-shell
+;; only need exec-path-from-shell on OSX
+;; this hopefully sets up path and other vars better
+(when (memq window-system '(mac ns))
+  (exec-path-from-shell-initialize))
+
+;; for better jsx syntax-highlighting in web-mode
+;; - courtesy of Patrick @halbtuerke
+(defadvice web-mode-highlight-part (around tweak-jsx activate)
+  (if (equal web-mode-content-type "jsx")
+      (let ((web-mode-enable-part-face nil))
+        ad-do-it)
+    ad-do-it))
+
+
+;; Change terrible flycheck default keybindings:
+(define-key flycheck-mode-map (kbd "C-c f l") #'flycheck-list-errors)
+(define-key flycheck-mode-map (kbd "C-c f n") #'flycheck-next-error)
+(define-key flycheck-mode-map (kbd "C-c f p") #'flycheck-previous-error)
+
+(require 'web-mode)
+
+
+;; Fix indentation of switch statements:
+(c-set-offset 'case-label '+)
+
+;;(set-fringe-mode 0)
+
+;; use web-mode for .jsx files
+(add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
+
+;; disable jshint since we prefer eslint checking
+(setq-default flycheck-disabled-checkers
+              (append flycheck-disabled-checkers
+                      '(javascript-jshint)))
+
+;; use eslint with web-mode for jsx files
+(flycheck-add-mode 'javascript-eslint 'web-mode)
+
+;; for better jsx syntax-highlighting in web-mode
+;; - courtesy of Patrick @halbtuerke
+(defadvice web-mode-highlight-part (around tweak-jsx activate)
+  (if (equal web-mode-content-type "jsx")
+      (let ((web-mode-enable-part-face nil))
+        ad-do-it)
+    ad-do-it))
+
+
+;; Set your lisp system and, optionally, some contribs
+(setq inferior-lisp-program "/opt/sbcl/bin/sbcl")
+(setq slime-contribs '(slime-fancy))
+
+(setq inferior-lisp-program "/usr/local/bin/clisp")
+
+(provide 'init)
+;;; init.el ends here
+
+

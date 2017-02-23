@@ -1,0 +1,220 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/andrew/github/cyber-syntax/" . "styles/")
+ ("/Users/andrew/github/" . "cyber-syntax/")
+ ("/Users/andrew/Desktop/cyber-syntax/" . "styles/")
+ ("/Users/andrew/xkal-syntax-test/" . "stylesheets/")
+ ("/Users/andrew/Desktop/" . "cyber-syntax/")
+ ("/Users/andrew/senalysis-app/src/views/" . "reset-password/")
+ ("/Users/andrew/senalysis-app/src/middleware/" . "redux/")
+ ("/Users/andrew/senalysis-api/src/alerts/" . "types/")
+ ("/Users/andrew/senalysis-app/src/components/" . "add-edit-business-modal/")
+ ("/Users/andrew/senalysis-app/src/" . "views/")
+ ("/Users/andrew/senalysis-app/" . "src/")
+ ("/Users/andrew/senalysis-api/src/config/" . "env/")
+ ("/Users/andrew/senalysis-api/vm-config/" . "mongo/")
+ ("/Users/andrew/.emacs.d/" . "site-lisp/")
+ ("/Users/andrew/senalysis-api/node_modules/" . "babel-cli/")
+ ("/Users/andrew/senalysis-api/src/middleware/redux/" . "handlers/")
+ ("/Users/andrew/senalysis-api/src/middleware/" . "redux/")
+ ("/Users/andrew/software-design-101/" . "HTML/")
+ ("/Users/andrew/senalysis-api/" . "src/")
+ ("/Users/" . "andrew/")
+ ("/" . "Users/")
+ ("/Users/andrew/senalysis-api/src/" . "config/")
+ ("/Users/andrew/" . "github/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/andrew/.emacs.d/"
+ "/Users/andrew/github/cyber-syntax/styles/"
+ "/Users/andrew/senalysis-api/src/config/"
+ "/Users/andrew/senalysis-api/src/config/env/"
+ "/Users/andrew/senalysis-app/src/"
+ "/Users/andrew/Desktop/"
+ "/Users/andrew/senalysis-api/src/"
+ "/Users/andrew/senalysis-api/src/models/"
+ "/Users/andrew/senalysis-api/src/middleware/redux/handlers/"
+ "/Users/andrew/Desktop/cyber-syntax/styles/"
+ "/Users/andrew/"
+ "/Users/andrew/Desktop/cyber-syntax/"
+ "/Users/andrew/senalysis-api/src/routes/"
+ "/Users/andrew/xkal-syntax-test/stylesheets/"
+ "/Users/andrew/xkal-syntax-test/"
+ "/Users/andrew/senalysis-api/src/middleware/redux/"
+ "/Users/andrew/senalysis-api/src/lib/"
+ "/Users/andrew/senalysis-api/src/alerts/types/"
+ "/Users/andrew/senalysis-api/src/alerts/"
+ "/Users/andrew/senalysis-api/src/actions/"
+ "/Users/andrew/senalysis-api/"
+ "/Users/andrew/Desktop/hwr/"
+ "/Users/andrew/senalysis-api/logs/"
+ "/Users/andrew/senalysis-app/src/views/reset-password/"
+ "/Users/andrew/senalysis-app/src/views/forgot-password/"
+ "/Users/andrew/senalysis-api/vm-config/mongo/"
+ "/Users/andrew/.emacs.d/site-lisp/"
+ "/Users/andrew/senalysis-api/src/store/"
+ "/Users/andrew/senalysis-api/src/public/"
+ "/Users/andrew/senalysis-app/src/components/add-edit-business-modal/"
+ "/Users/andrew/senalysis-api/src/reducers/"
+ "/Users/andrew/senalysis-app/src/views/users/"
+ "/Users/andrew/senalysis-api/src/middleware/koa/"
+ "/Users/andrew/senalysis-api/clients/"
+ "/Users/andrew/senalysis-api/test/"
+ "/Users/andrew/Downloads/"
+ "/Users/andrew/senalysis-api/vm-config/"
+ "/Users/andrew/senalysis-api/src/middleware/async/"
+ "/Users/andrew/senalysis-api/src/middleware/remote/"
+ "/Users/andrew/senalysis-api/src/middleware/"
+ "/Users/andrew/senalysis-api/src/core/"
+ "/Users/andrew/software-design-101/HTML/"
+ "/Users/andrew/voting_server/test/"
+ "/Users/andrew/voting_server/src/"
+ "/Users/andrew/voting_server/"
+ "/Users/andrew/senalysis-api/src/controllers/"
+ "/Users/andrew/koa_tutorials/"
+ "/Users/andrew/chat-example/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+ "init-packages.el"
+ "base.less"
+ "colors.less"
+ "index.js"
+ "testing.js"
+ "config.json"
+ "env.txt"
+ "campaigns.js"
+ "campaign_templates.js"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/andrew/.emacs.d/" (22546 833 0 0) "snippets/" "site-lisp/" "saveplace.el" "recentf" "README.md" "places" "init.el" "init-sql-settings.el" "init-python-settings.el" "init-packages.el" "init-keybindings.el" "init-js-settings.el" "init-functions.el" "eshell/" "emacs-backup/" "elpa/" "custom.el" "auto-save-list/" "ac-comphist.dat" ".ido.last" ".git/" "#init-packages.el#" "../" "./")
+
+ ("/Users/andrew/" (22546 859 0 0) "xkal-syntax-test/" "VirtualBox VMs/" "software-design-101/" "senalysis-data-exchange/" "senalysis-app/" "senalysis-api/" "Public/" "Pictures/" "node_modules/" "Music/" "Movies/" "Library/" "github/" "Downloads/" "Documents/" "Desktop/" "Cargo.toml" "Applications/" ".viminfo" ".vagrant.d/" ".v8flags.4.6.85.31.andrew.json" ".Trash/" ".tmux.conf" ".tern-port" ".ssh/" ".spacemacs" ".slime/" ".rustup/" ".npm/" ".node_repl_history" ".node-gyp/" ".jshintrc" ".ipython/" ".ievms/" ".hgignore_global" ".gnupg/" ".gitignore_global" ".gitexcludes" ".gitconfig" ".emacs.d.spacemacs_bak/" ".emacs.d/" ".DS_Store" ".cups/" ".config/" ".CFUserTextEncoding" ".bash_sessions/" ".bash_profile" ".bash_history" ".babel.json" ".atom/" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/middleware/" (22468 17677 0 0) "redux/" "../" "./")
+
+ ("/Users/andrew/senalysis-api/vm-config/" (22510 14768 0 0) "provision.sh" "mongo/" "env/" "../" "./")
+
+ ("/Users/andrew/Downloads/" (22546 458 0 0) "solid-snake.jpg" "Slack.app/" "Slack-2.3.0-macOS.zip" "Slack 2.app/" "senalysis-report.csv" "senalysis-report (96).csv" "senalysis-report (95).csv" "senalysis-report (94).csv" "senalysis-report (93).csv" "senalysis-report (92).csv" "senalysis-report (91).csv" "senalysis-report (90).csv" "senalysis-report (9).csv" "senalysis-report (89).csv" "senalysis-report (88).csv" "senalysis-report (87).csv" "senalysis-report (86).csv" "senalysis-report (85).csv" "senalysis-report (84).csv" "senalysis-report (83).csv" "senalysis-report (82).csv" "senalysis-report (81).csv" "senalysis-report (80).csv" "senalysis-report (8).csv" "senalysis-report (79).csv" "senalysis-report (78).csv" "senalysis-report (77).csv" "senalysis-report (76).csv" "senalysis-report (75).csv" "senalysis-report (74).csv" "senalysis-report (73).csv" "senalysis-report (72).csv" "senalysis-report (71).csv" "senalysis-report (70).csv" "senalysis-report (7).csv" "senalysis-report (69).csv" "senalysis-report (68).csv" "senalysis-report (67).csv" "senalysis-report (66).csv" "senalysis-report (65).csv" "senalysis-report (64).csv" "senalysis-report (63).csv" "senalysis-report (62).csv" "senalysis-report (61).csv" "senalysis-report (60).csv" "senalysis-report (6).csv" "senalysis-report (59).csv" "senalysis-report (58).csv" "senalysis-report (57).csv" "senalysis-report (56).csv" "senalysis-report (55).csv" "senalysis-report (54).csv" "senalysis-report (53).csv" "senalysis-report (52).csv" "senalysis-report (51).csv" "senalysis-report (50).csv" "senalysis-report (5).csv" "senalysis-report (49).csv" "senalysis-report (48).csv" "senalysis-report (47).csv" "senalysis-report (46).csv" "senalysis-report (45).csv" "senalysis-report (44).csv" "senalysis-report (43).csv" "senalysis-report (42).csv" "senalysis-report (41).csv" "senalysis-report (40).csv" "senalysis-report (4).csv" "senalysis-report (39).csv" "senalysis-report (38).csv" "senalysis-report (37).csv" "senalysis-report (36).csv" "senalysis-report (35).csv" "senalysis-report (34).csv" "senalysis-report (33).csv" "senalysis-report (32).csv" "senalysis-report (31).csv" "senalysis-report (30).csv" "senalysis-report (3).csv" "senalysis-report (29).csv" "senalysis-report (28).csv" "senalysis-report (27).csv" "senalysis-report (26).csv" "senalysis-report (25).csv" "senalysis-report (24).csv" "senalysis-report (23).csv" "senalysis-report (22).csv" "senalysis-report (21).csv" "senalysis-report (20).csv" "senalysis-report (2).csv" "senalysis-report (19).csv" "senalysis-report (18).csv" "senalysis-report (17).csv" "senalysis-report (16).csv" "senalysis-report (15).csv" "senalysis-report (14).csv" "senalysis-report (13).csv" "senalysis-report (12).csv" "senalysis-report (11).csv" "senalysis-report (10).csv" "senalysis-report (1).csv" "sbcl-1.1.6-x86-darwin-binary.tar.bz2" "sbcl-1.1.6-x86-darwin/" "Postman.app/" "Paw-3.0.9-3000009000.zip" "KeeWeb-1.3.3.mac.dmg" "Insomnia-3.3.1.dmg" "IMAG0014.jpg" "download" "Default.pdf" "Default 1.pdf" "clients_1.key" "calendar-event.ics" "builderror.log" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/andrew/senalysis-app/src/views/users/" (22538 5795 0 0) "users.scss" "index.jsx" "../" "./")
+
+ ("/Users/andrew/senalysis-app/src/components/add-edit-business-modal/" (22545 47928 0 0) "index.jsx" "add-business-social-media.jsx" "add-business-search-profile.jsx" "add-business-navigation.jsx" "add-business-modal.scss" "add-business-modal-header.jsx" "add-business-basic-info.jsx" "add-business-approval.jsx" "../" "./")
+
+ ("/Users/andrew/senalysis-api/vm-config/mongo/" (22491 63043 0 0) "mongod.conf" "../" "./")
+
+ ("/Users/andrew/senalysis-app/src/views/forgot-password/" (22464 585 0 0) "index.jsx" "forgot-password.scss" "../" "./")
+
+ ("/Users/andrew/senalysis-api/logs/" (22517 5692 0 0) "senalysis-http-requests_error.log" "senalysis-http-requests.log" "redux.log" "../" "./")
+
+ ("/Users/andrew/senalysis-api/" (22541 52015 0 0) "vm-config/" "Vagrantfile" "src/" "README.md" "package.json" "nodemon.json" "node_modules/" "logs/" "load_test_data.js" "generate_test_data.js" "deploy/" ".vagrant/" ".gitignore" ".git/" ".eslintrc.yml" ".DS_Store" ".babelrc" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/actions/" (22544 49171 0 0) "users.js" "types.js" "tags.js" "streams.js" "stats.js" "socket.js" "social_media_accounts.js" "settings.js" "saved_reports.js" "posts.js" "post_templates.js" "permissions.js" "notifications.js" "health_scores.js" "companies.js" "campaigns.js" "campaign_templates.js" "businesses.js" "business_types.js" "auth_tokens.js" "auth.js" "alerts.js" "activities.js" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/alerts/types/" (22510 14768 0 0) "campaigns.js" "businesses.js" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/lib/" (22545 53893 0 0) "utils.js" "twitter.js" "permissions.js" "password.js" "errors.js" "campaigns.js" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/middleware/redux/" (22545 53893 0 0) "remote.js" "permissions.js" "permissions-whitelist.js" "logging.js" "handlers/" "async.js" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/routes/" (22541 52016 0 0) "stats.js" "saved_reports.js" "notifications.js" "index.js" "auth.js" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/middleware/redux/handlers/" (22545 53893 0 0) "users.js" "tags.js" "streams.js" "stats.js" "social_media_accounts.js" "settings.js" "saved_reports.js" "posts.js" "post_templates.js" "notifications.js" "health_scores.js" "companies.js" "campaigns.js" "campaign_templates.js" "businesses.js" "business_types.js" "auth_tokens.js" "auth.js" "alerts.js" "activities.js" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/models/" (22544 49171 0 0) "yelp_settings.js" "yelp_reviews.js" "yelp_comments.js" "users.js" "twitter_stats.js" "twitter_posts.js" "twitter_other_stats.js" "twitter_mentions.js" "twitter_follows.js" "twitter_favourites.js" "tags.js" "streams.js" "stats.js" "social_media_accounts.js" "sentiment_filter.js" "saved_reports.js" "pw_reset_tokens.js" "posts.js" "post_templates.js" "notifications.js" "instagram_stats.js" "instagram_posts.js" "instagram_other_stats.js" "instagram_likes.js" "instagram_follows.js" "instagram_comments.js" "facebook_stats.js" "facebook_ratings.js" "facebook_posts.js" "facebook_messages.js" "facebook_comments.js" "companies.js" "campaigns.js" "campaign_templates.js" "campaign_messages.js" "businesses.js" "business_types.js" "auth_tokens.js" "alerts.js" "activities.js" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/" (22535 14735 0 0) "store/" "routes/" "reducers/" "models/" "middleware/" "log.js" "lib/" "index.js" "healthscore/" "db.js" "config/" "alerts/" "actions/" ".DS_Store" "../" "./")
+
+ ("/Users/andrew/Desktop/" (22537 55186 0 0) "working_logger.js" "Utilities" "users_data.js" "twitter_oauth_not_needed" "test_Vagrantfile" "test_actions.txt" "test56.jpeg" "test.js" "test.jpg" "temp.js" "streams.md" "stats_redundant.js" "smTeamLeader0Image.png" "senalysis_api_db.zip" "senalysis-dev-521d7103e20f.json" "permissions_review.txt" "PDF.zip" "PDF/" "parsedQuery.js" "OOJ/" "old_remote.js" "needs_permissions_check.txt" "login_succeeded_logs.txt" "info.js" "index.js" "hwr/" "env_and_DE_bash_history.txt" "emacs.d_sep_16.zip" "emacs.d/" "cyber-syntax/" "clients.kdbx" "backup.zip" "authToken.js" "authFailed functions.rtf" "actions.js" "action_handlers.js" "20160820_212513.jpg" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/andrew/senalysis-app/src/" (22538 15856 0 0) "views/" "utils.js" "utils/" "style.scss" "store/" "state.js" "reducers/" "middleware/" "index.jsx" "countryData/" "cookie.js" "containers/" "config.json" "components/" "api.js" "actions/" "_variables.scss" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/config/env/" (22510 14768 0 0) "testing.js" "staging.js" "production.js" "development.js" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/config/" (22535 14735 0 0) "index.js" "env/" "../" "./")
+
+ ("/Users/andrew/github/cyber-syntax/styles/" (22464 4323 0 0) "syntax-variables.less" "colors.less" "base.less" "../" "./")
+
+ ("/Users/andrew/senalysis-app/" (22461 33080 0 0) "webpack.production.config.js" "webpack.config.js" "vm-config/" "Vagrantfile" "test/" "src/" "README.md" "package.json" "npm-debug.log" "node_modules/" "dist/" "deploy/" ".vagrant/" ".gitignore" ".git/" ".eslintrc.yml" "../" "./")
+
+ ("/Users/andrew/senalysis-app/src/views/reset-password/" (22460 4048 0 0) "index.jsx" "../" "./")
+
+ ("/Users/andrew/github/cyber-syntax/" (22461 42073 0 0) "styles/" "README.md" "package.json" "LICENSE.md" "index.less" "CHANGELOG.md" ".gitignore" "../" "./")
+
+ ("/Users/andrew/github/" (22461 42073 0 0) "cyber-syntax/" "../" "./")
+
+ ("/Users/andrew/Desktop/cyber-syntax/styles/" (22461 41279 0 0) "syntax-variables.less" "colors.less" "base.less" ".DS_Store" "../" "./")
+
+ ("/Users/andrew/Desktop/cyber-syntax/" (22458 53296 0 0) "styles/" "README.md" "package.json" "LICENSE.md" "index.less" "CHANGELOG.md" ".gitignore" ".DS_Store" "../" "./")
+
+ ("/Users/andrew/xkal-syntax-test/stylesheets/" (22454 56021 0 0) "syntax-variables.less" "colors.less" "base.less" "#base.less#" "../" "./")
+
+ ("/Users/andrew/xkal-syntax-test/" (22454 52125 0 0) "stylesheets/" "README.md" "package.json" "LICENSE.md" "index.less" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/andrew/xkal-syntax/" (22454 52125 0 0) "stylesheets/" "README.md" "package.json" "LICENSE.md" "index.less" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/reducers/" (22435 10593 0 0) "socket.js" "index.js" "auth.js" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/public/" (22435 10593 0 0) "robots.txt" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/store/" (22435 10593 0 0) "index.js" "../" "./")
+
+ ("/Users/andrew/Desktop/hwr/" (22435 28729 0 0) "webpack.config.js" "package.json" "node_modules/" ".DS_Store" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/alerts/" (22435 10593 0 0) "types/" "index.js" "alerts.js" "../" "./")
+
+ ("/Users/andrew/senalysis-app/src/views/" (22413 56844 0 0) "users/" "user/" "terms-privacy-user/" "terms-privacy-guest/" "templates/" "template-posts/" "streams/" "sm-account-auth-popup/" "settings/" "reset-password/" "reporting/" "monitoring/" "login/" "inbox/" "forgot-password/" "dashboard/" "competitions/" "company-management-page/" "company/" "common.scss" "campaigns/" "campaign-posts/" "business-management-page/" "business/" "adhoc-posts/" "../" "./")
+
+ ("/Users/andrew/.emacs.d/site-lisp/" (22406 25146 0 0) "web-mode.el" "virtualenv.el" "unbound.el" "static.el" "sr-speedbar.el" "smooth-scrolling.el" "README" "python-mode.el" "pym.el" "product.el" "powerline.el" "pos-tip.el" "nodejs-repl.el" "nodejs-repl-eval.el" "multi-term.el" "linum-off.el" "jinja2-mode.el" "highlight-beyond-fill-column.el" "fullscreen.el" "fill-column-indicator.el" "elscreen.el" "django-mode/" "dash.el" "company-quickhelp.el" "apel-ver.el" "alist.el" "../" "./")
+
+ ("/Users/andrew/senalysis-app/src/middleware/redux/" (22397 16137 0 0) "remote.js" "async.js" "../" "./")
+
+ ("/Users/andrew/senalysis-app/src/middleware/" (22366 36797 0 0) "redux/" "../" "./")
+
+ ("/Users/andrew/senalysis-app/src/components/" (22376 7427 0 0) "user-management-user-list/" "user-management-user/" "upload-template/" "toggle/" "terms-privacy-user/" "template-campaign-list/" "template-campaign-item/" "stream-post/" "stream-list/" "stream/" "social-feeds/" "sm-agent-performace/" "slim-notification-user/" "slim-notification-post/" "slim-notification-list/" "slim-notification/" "slim-alert-notification-list/" "sidebar/" "response-time/" "respond-stream-post-modal/" "reporting-saved-reports/" "reporting-live-report/" "post-modal-social-media/" "post-modal-page-table/" "post-modal-page/" "post-modal-content/" "post-entry-list/" "post-entry/" "post-details-panel/" "pagination/" "notification-tag-list/" "notification-tag/" "notification-post/" "notification-list/" "notification-analysis/" "notification/" "monitoring-summary/" "monitoring-likes/" "monitoring-interactions/" "monitoring-impressions/" "monitoring-graph/" "line-chart/" "inbox-panel/" "header-login/" "header/" "footer/" "facebook-login/" "edit-user-modal-content/" "drop-down-menu-multi/" "drop-down-menu/" "doughnut-chart/" "dialog-modal-template-multi-step/" "dialog-modal-template/" "delete-modal/" "day-picker/" "date-range/" "dashboard/" "customer-reporting/" "create-template/" "copy-template-campaign/" "conversation-modal/" "company-panel-list/" "company-panel/" "comment-list/" "comment/" "chart-line/" "chart-doughnut/" "chart-bar/" "campaign-list/" "campaign-item/" "campaign-create/" "campaign-copy/" "business-panel-list/" "business-panel/" "business-modal/" "business-list/" "business-dashboard/" "business-activity-list/" "bar-chart/" "alert-list/" "alert/" "agent-activity/" "add-user-modal-content/" "add-tab-modal/" "add-stream-modal-content/" "add-edit-template-campaign/" "add-edit-company-modal/" "add-edit-business-modal/" "add-campaign-template-content/" "activity-list/" "activities/" "action-sheet-tags/" "action-sheet-sentiment-analysis/" "action-sheet-reject-campaign/" "action-sheet-approve-campaign/" "action-sheet/" "account-settings/" "../" "./")
+
+ ("/Users/andrew/senalysis-api/test/" (22366 36507 0 0) "test_helper.js" "reducer_spec.js" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/middleware/koa/" (22358 36470 0 0) "json_parser.js" "../" "./")
+
+ ("/Users/andrew/senalysis-api/clients/" (22333 49842 0 0) "client.html" "../" "./")
+
+ ("/Users/andrew/senalysis-api/node_modules/" (22316 48027 0 0) "uuid/" "redux-thunk/" "redux-node-logger/" "redux/" "nodemon/" "monk/" "mocha/" "lodash.omit/" "lodash.assign/" "koa-static-server/" "koa-socket/" "koa-router/" "koa/" "immutable/" "email-validator/" "co-monk/" "co-bcrypt/" "co/" "chai-immutable/" "chai/" "bunyan/" "babel-preset-es2015-node5/" "babel-preset-es2015/" "babel-plugin-transform-object-assign/" "babel-core/" "babel-cli/" ".bin/" "../" "./")
+
+ ("/Users/andrew/senalysis-api/node_modules/babel-cli/" (22298 22179 0 0) "scripts/" "README.md" "package.json" "node_modules/" "lib/" "index.js" "bin/" ".npmignore" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/middleware/async/" (22302 17737 0 0) "index.js" ".#index.js" "#index.js#" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/middleware/remote/" (22302 6548 0 0) "index.js" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/core/" (22292 40606 0 0) "users.js" ".tern-port" "../" "./")
+
+ ("/Users/andrew/software-design-101/HTML/" (22287 23825 0 0) "websocket_test_client.html" "Link-Inside-A-Link.md" "index.html" "Easy-Scroll-To-Top-Button.md" "../" "./")
+
+ ("/Users/andrew/software-design-101/" (22287 22819 0 0) "zf2-angularjs-skeleton/" "wordpress/" "vagrant/" "Sublime/" "SSH-SCP/" "Security/" "SASS-CSS-SCSS/" "SASS/" "README.md" "PushNotifications/" "PHP/" "Online-Tools/" "Node/" "Needed Development Items/" "MYSQL Operations/" "LightBoxDigital Test Server/" "Learning Resources/" "Javascript/" "Ionic/" "Intercom/" "HTML/" "git/" "Excel/" "estimates/" "Code Style Guidelines/" "chromeDevTools/" "Bash/" "Base Template Demo/" "Apache/" "AngularJS/" ".git/" "../" "./")
+
+ ("/Users/andrew/voting_server/src/" (22285 3653 0 0) "core.js" "../" "./")
+
+ ("/Users/andrew/voting_server/test/" (22285 5520 0 0) "test_immutable_2.js" "test_helper.js" "immutable_spec_3.js" "immutable_spec.js" "core_spec.js" "../" "./")
+
+ ("/Users/andrew/voting_server/" (22285 2560 0 0) "test/" "src/" "package.json" "node_modules/" ".tern-port" "../" "./")
+
+ ("/Users/andrew/senalysis-api/src/controllers/" (22283 42000 0 0) "test.js" "../" "./")
+
+ ("/Users/" (22274 9590 0 0) "Shared/" "graham/" "andrew/" "admin/" ".localized" "../" "./")
+
+ ("/Users/andrew/koa_tutorials/" (22278 37413 0 0) "socket.js" "response_example.js" "request_example.js" "example1.js" "cascading_example.js" ".tern-port" "../" "./")
+
+ ("/Users/andrew/chat-example/" (22278 17512 0 0) "index.js" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

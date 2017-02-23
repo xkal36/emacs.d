@@ -44,7 +44,19 @@
   ) )
 
 
-(global-set-key (kbd "C-l") 'fullscreen-toggle)
+;; On X window system:
+;;(global-set-key (kbd "C-l") 'fullscreen-toggle)
+
+;; ;; On OSX:
+(defun toggle-fullscreen ()
+  "Toggle full screen"
+  (interactive)
+  (set-frame-parameter
+   nil 'fullscreen
+   (when (not (frame-parameter nil 'fullscreen)) 'fullboth)))
+
+
+(global-set-key (kbd "C-l") 'toggle-fullscreen)
 
 (global-set-key (kbd "C-q") 'sr-speedbar-open)
 (global-set-key (kbd "C-r") 'sr-speedbar-close)
@@ -73,3 +85,7 @@
 
 (global-set-key (kbd "C-x w") 'skewer-html-eval-tag)
 (global-set-key (kbd "C-x y") 'skewer-css-eval-current-rule)
+
+
+
+

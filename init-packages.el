@@ -1,3 +1,4 @@
+
 (require 'package)
 
 (add-to-list 'package-archives
@@ -22,7 +23,7 @@
 		slime skewer-mode window-purpose company cyberpunk-theme elpy 
 		yasnippet pyvenv highlight-indentation find-file-in-project 
 		sql-indent sql exec-path-from-shell ipython iedit vagrant
-        auto-complete popup let-alist magit minimap popup tern tern-auto-complete))
+        auto-complete popup json-mode exec-path-from-shell let-alist magit popup tern tern-auto-complete web-beautify))
 
 
 ; activate all the packages
