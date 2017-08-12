@@ -35,17 +35,10 @@
 (require 'fill-column-indicator)
 (ac-config-default)
 
-(add-to-list 'load-path "~/.emacs.d/ste-lisp/django-mode")
-
 (require 'multi-term)
 (setq multi-term-program "/bin/bash")
 
 (require 'jinja2-mode)
-
-(require 'django-mode)
-(require 'django-html-mode)
-(yas/load-directory "~/.emacs.d/site-lisp/django-mode/snippets")
-(add-to-list 'auto-mode-alist '("\\.djhtml$" . django-html-mode))
 
 (require 'linum-off)
 

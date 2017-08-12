@@ -17,11 +17,12 @@
  '(custom-enabled-themes (quote (cyberpunk)))
  '(custom-safe-themes
    (quote
-    ("71ecffba18621354a1be303687f33b84788e13f40141580fa81e7840752d31bf" "561ba4316ba42fe75bc07a907647caa55fc883749ee4f8f280a29516525fc9e8" "274e030e327161ccb5d8c73a6458ba6f5cbdfdd5f05f6ce7e710779d87083eda" "b9e72874e3180f42d4ecdee8b5ecbf67fe5e922747ca50c8b9ca5960988c6277" "a491c2db211cf4f203cc357dd6e49944734a27d512127eac942a2b0c438b0c2e" default)))
+    ("d6922c974e8a78378eacb01414183ce32bc8dbf2de78aabcc6ad8172547cb074" "71ecffba18621354a1be303687f33b84788e13f40141580fa81e7840752d31bf" "561ba4316ba42fe75bc07a907647caa55fc883749ee4f8f280a29516525fc9e8" "274e030e327161ccb5d8c73a6458ba6f5cbdfdd5f05f6ce7e710779d87083eda" "b9e72874e3180f42d4ecdee8b5ecbf67fe5e922747ca50c8b9ca5960988c6277" "a491c2db211cf4f203cc357dd6e49944734a27d512127eac942a2b0c438b0c2e" default)))
  '(display-buffer-reuse-frames t)
  '(electric-pair-mode 1)
  '(elpy-rpc-backend "jedi")
  '(global-linum-mode 1)
+ '(gud-pdb-command-name "python -m pdb")
  '(ido-enable-flex-matching t)
  '(ido-mode (quote both) nil (ido))
  '(ido-save-directory-list-file "~/.emacs.d/.ido.last")
@@ -36,7 +37,6 @@
  '(ps-line-number nil)
  '(pyvenv-activate nil)
  '(realgud:pdb-command-name "python -m pdb")
- '(gud-pdb-command-name "python -m pdb")
  '(recentf-mode t)
  '(setq show-paren-style t)
  '(show-paren-mode t)
