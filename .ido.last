@@ -2,6 +2,11 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/xkal12/course-ud303/Lesson-3/" . "2_CookieServer/")
+ ("/home/xkal12/course-ud303/" . "Lesson-2/")
+ ("/home/xkal12/course-ud303/Lesson-2/" . "7_BookmarkServer/")
+ ("/home/xkal12/programming-languages/" . "exps/")
+ ("/home/xkal12/" . "course-ud303/")
  ("/Users/andrew/github/cyber-syntax/" . "styles/")
  ("/Users/andrew/github/" . "cyber-syntax/")
  ("/Users/andrew/Desktop/cyber-syntax/" . "styles/")
@@ -29,6 +34,24 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/xkal12/"
+ "/home/xkal12/.emacs.d/"
+ "/home/xkal12/Downloads/"
+ "/home/xkal12/repodata/repodata/"
+ "/home/xkal12/course-ud303/Lesson-3/2_CookieServer/solution/"
+ "/home/xkal12/course-ud303/Lesson-3/2_CookieServer/"
+ "/home/xkal12/BookmarkServer/"
+ "/home/xkal12/repodata/"
+ "/home/xkal12/course-ud303/Lesson-2/7_BookmarkServer/solution/"
+ "/home/xkal12/course-ud303/Lesson-2/7_BookmarkServer/"
+ "/home/xkal12/course-ud303/Lesson-2/6_UsingJSON/"
+ "/home/xkal12/course-ud303/Lesson-2/5_MessageboardPartThree/solution/"
+ "/home/xkal12/course-ud303/Lesson-2/5_MessageboardPartThree/"
+ "/home/xkal12/course-ud303/Lesson-2/4_MessageboardPartTwo/solution/"
+ "/home/xkal12/course-ud303/Lesson-2/3_MessageboardPartOne/"
+ "/home/xkal12/programming-languages/exps/"
+ "/home/xkal12/programming-languages/"
+ "/home/xkal12/.emacs.d/site-lisp/"
  "/Users/andrew/.emacs.d/"
  "/Users/andrew/github/cyber-syntax/styles/"
  "/Users/andrew/senalysis-api/src/config/"
@@ -61,40 +84,74 @@
  "/Users/andrew/senalysis-app/src/components/add-edit-business-modal/"
  "/Users/andrew/senalysis-api/src/reducers/"
  "/Users/andrew/senalysis-app/src/views/users/"
- "/Users/andrew/senalysis-api/src/middleware/koa/"
- "/Users/andrew/senalysis-api/clients/"
- "/Users/andrew/senalysis-api/test/"
- "/Users/andrew/Downloads/"
- "/Users/andrew/senalysis-api/vm-config/"
- "/Users/andrew/senalysis-api/src/middleware/async/"
- "/Users/andrew/senalysis-api/src/middleware/remote/"
- "/Users/andrew/senalysis-api/src/middleware/"
- "/Users/andrew/senalysis-api/src/core/"
- "/Users/andrew/software-design-101/HTML/"
- "/Users/andrew/voting_server/test/"
- "/Users/andrew/voting_server/src/"
- "/Users/andrew/voting_server/"
- "/Users/andrew/senalysis-api/src/controllers/"
- "/Users/andrew/koa_tutorials/"
- "/Users/andrew/chat-example/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "test565.py"
+ "test.sml"
+ "test.js"
+ ".tern-project"
  "init.el"
  "init-packages.el"
- "base.less"
- "colors.less"
- "index.js"
- "testing.js"
- "config.json"
- "env.txt"
- "campaigns.js"
- "campaign_templates.js"
+ "_2fbdc6f053a05cb18a910cba669c2687_hw0provided.sml"
+ "fibonacci.py"
+ "fibonaccit.py"
+ "fibionacci.py"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/xkal12/Downloads/" (22927 25206 468252 116000) "6_shadowing.sml" "trading-infrastructure-graphic-pdf.pdf" "10_repl.txt" "_9619469861bdcadec4fc4e085a1ee469_3_ML_expressions_and_variable_bindings.pdf" "_2fbdc6f053a05cb18a910cba669c2687_hw0provided (1).sml" "L2-Request-Headers-Binary/" "5_some_errors.sml" "./" "15_options.sml" "lists (1).pdf" "3_our_first_program (1).sml" "_2fbdc6f053a05cb18a910cba669c2687_hw0provided (2).sml" "_e32a8759f7d7734c98438aaa030cfe7c_8_functions_formal (1).pdf" "_8dc4f87019de233e9f8d31d7c4d7ecbd_6_shadowing.pdf" "11_list_functions.sml" "L1-Fetch-Binary/" "l5-csrf-binary.zip" "ud897-l4-http2-binary.zip" "14_let_efficiency.sml" "Resume (1).doc" "l1-devtools.zip" "l5-preflight-requests-binary.zip" "CV_Current.pdf" "../" "config.tgz" "the-definitive-guide-to-growth-hacking.pdf" "13_nested_functions.sml" "_0926d3339b2d640ff191ae3b28d07339_7_functions_informal.pdf" "_9ad8d18e28e6836542932ff7ea2096be_4_rules_for_expressions.pdf" "5_errors_fixed.sml" "imsmanifest.xml" "L1-DevTools/" "repodata.tar.gz" "9_tuples.sml" "_e24684aa0d899c1d5eb7b17f83653bfc_5_REPL_and_errors.pdf" "_e32a8759f7d7734c98438aaa030cfe7c_8_functions_formal.pdf" "learn-python-the-hard-way-may-31-2017.pdf" "L3-Mixed-Content-Binary/" "Resume (1) (1).doc" "12_let_expressions.sml" "Resume.doc" "Python - Homework task.docx" "asoundrc" "_9a49a3d3d0d3db7c72aa819869f7df33_section1sum.pdf" "_2fbdc6f053a05cb18a910cba669c2687_hw0test.sml" "Print Order # 3100111938 - OnePlus.pdf" "9372636.png" "_0e9e4634f314299570e068387a7872cc_10_lists.pdf" "3_our_first_program.sml" "ud897-l2-request-headers-binary.zip" "repodata/" "Resume (1) (2).doc" "6-006-fall-2011.zip" "l3-mixed-content-binary.zip" "7_functions.sml" "_9619469861bdcadec4fc4e085a1ee469_3_ML_expressions_and_variable_bindings (1).pdf" "5620 - Python Dev (2).docx")
+
+ ("/home/xkal12/.emacs.d/" (22884 5798 92603 209000) "elpa/" "./" "network-security.data" "site-lisp/" "init-packages.el" "init-functions.el" "init-python-settings.el" "init-keybindings.el" ".ido.last" "README.md" "../" "ac-comphist.dat" "init-js-settings.el" "init.el" "places" "custom.el" ".git/" "snippets/" "recentf" "saveplace.el" "auto-save-list/" "eshell/" "emacs-backup/" "init-sql-settings.el")
+
+ ("/home/xkal12/" (22927 25206 474918 783000) "./" "VirtualBox VMs/" ".bash_history.save" ".gitconfig" "ud513/" "AAEAAQAAAAAAAA3aAAAAJDVjYmU0MGVlLWZmNTktNGI0OC05MmM3LTRhODA4ODZjZmM5YQ (1).jpg" "wp.png" ".Xauthority" ".tern-project" "anagrams.py" ".npm/" ".local/" ".bash_history" ".dbshell" "../" "test.js" ".mongorc.js" ".config/" ".bashrc" "subsequence_sum.py" "AAEAAQAAAAAAAA3aAAAAJDVjYmU0MGVlLWZmNTktNGI0OC05MmM3LTRhODA4ODZjZmM5YQ.jpg" "repodata.tar.gz" "BookmarkServer/" "programming-languages/" ".thumbnails/" ".ssh/" ".pki/" ".dmenu_cache" ".vagrant.d/" ".pylint.d/" ".asoundrc" ".gnupg/" "Downloads/" "course-ud303/" "ransom_note.py" ".vscode/" ".3T/" "dictionary.txt" "gistHub/" ".archey3.cfg" ".bash_logout" "fehbg" "dotfiles/" ".xinitrc" ".fehbg" "fibonacci.py" ".python_history" ".nanorc" ".i3/" "repodata/" "i3status.conf" ".i3status.conf" ".netrc" ".cache/" ".Xresources" "misc/" ".emacs.d/")
+
+ ("/home/xkal12/programming-languages/" (22881 19004 719168 325000) "./" "../" "Week2/" "sml_instructions.txt")
+
+ ("/home/xkal12/repodata/repodata/" (22856 5565 664945 850000) "./" "fetcher.py" "repodata.py" "__init__.py" "../" "processors.py" "test_processors.py" "__main__.py")
+
+ ("/home/xkal12/repodata/" (22850 60170 301763 584000) "./" "README.md" "../" "requirements.txt" ".git/" "MANIFEST.in" "LICENSE" "repodata/" "setup.py")
+
+ ("/home/xkal12/course-ud303/Lesson-3/2_CookieServer/" (22850 63657 445097 996000) "./" "solution/" "../" "test.py" "CookieServer.py")
+
+ ("/home/xkal12/course-ud303/Lesson-3/2_CookieServer/solution/" (22850 63538 941764 626000) "./" "../" "CookieServer.py")
+
+ ("/home/xkal12/course-ud303/Lesson-3/" (22849 41632 591757 59000) "./" "0_Deploying/" "README.md" "3_Parallelometer/" "../" "1_ThreadedServer/" "2_CookieServer/")
+
+ ("/home/xkal12/BookmarkServer/" (22850 62211 431764 215000) "./" "runtime.txt" "Procfile" "../" "requirements.txt" ".git/" "BookmarkServer.py")
+
+ ("/home/xkal12/course-ud303/Lesson-2/3_MessageboardPartOne/" (22850 57701 781762 820000) "./" "README.md" "solution/" "../" "test.py" "MessageboardPartOne_flymake.py" "Messageboard.html" "MessageboardPartOne.py")
+
+ ("/home/xkal12/course-ud303/Lesson-2/4_MessageboardPartTwo/solution/" (22850 46796 921759 448000) "./" "../" "MessageboardPartTwo.py")
+
+ ("/home/xkal12/course-ud303/Lesson-2/5_MessageboardPartThree/solution/" (22850 49622 385093 656000) "./" "../" "MessageboardPartThree.py")
+
+ ("/home/xkal12/course-ud303/Lesson-2/7_BookmarkServer/solution/" (22850 51672 585094 290000) "./" "../" "BookmarkServer.py")
+
+ ("/home/xkal12/course-ud303/Lesson-2/7_BookmarkServer/" (22850 51806 118427 664000) "./" "README.md" "solution/" "../" "test.py" "__pycache__/" "BookmarkServer.py")
+
+ ("/home/xkal12/course-ud303/Lesson-2/6_UsingJSON/" (22850 50472 985093 918000) "./" "README.md" "solution/" "../" "test.py" "__pycache__/" "UINames.py")
+
+ ("/home/xkal12/course-ud303/Lesson-2/5_MessageboardPartThree/" (22850 49652 791760 332000) "./" "README.md" "solution/" "../" "test.py" "MessageboardPartThree.py")
+
+ ("/home/xkal12/course-ud303/Lesson-2/4_MessageboardPartTwo/" (22849 41632 591757 59000) "./" "README.md" "solution/" "../" "test.py" "Messageboard.html" "MessageboardPartTwo.py")
+
+ ("/home/xkal12/course-ud303/Lesson-2/3_MessageboardPartOne/solution/" (22849 41632 591757 59000) "./" "../" "MessageboardPartOne.py")
+
+ ("/home/xkal12/course-ud303/Lesson-2/" (22849 41632 591757 59000) "./" "3_MessageboardPartOne/" "4_MessageboardPartTwo/" "README.md" "../" "0_HelloServer/" "1_EchoServer/" "5_MessageboardPartThree/" "7_BookmarkServer/" "2_HTMLForms/" "6_UsingJSON/")
+
+ ("/home/xkal12/course-ud303/" (22849 41632 591757 59000) "./" "Lesson-3/" "Lesson-2/" "README.md" "../" ".git/" "Lesson-1/")
+
+ ("/home/xkal12/programming-languages/exps/" (22845 52577 461606 577000) "./" "../" "first.sml")
+
+ ("/home/xkal12/repodata/repodata.egg-info/" (22825 64809 729634 820000) "PKG-INFO" "./" "../" "dependency_links.txt" "entry_points.txt" "SOURCES.txt" "top_level.txt")
+
+ ("/home/xkal12/repodata/repodata/models/" (22826 59091 797109 270000) "./" "../")
+
+ ("/home/xkal12/.emacs.d/site-lisp/" (22826 51020 507106 779000) "elscreen.el" "./" "powerline.el" "python-mode.el" "highlight-beyond-fill-column.el" "fullscreen.el" "alist.el" "../" "unbound.el" "fill-column-indicator.el" "static.el" "pos-tip.el" "apel-ver.el" "pym.el" "product.el" "README" "django-mode/" "virtualenv.el" "nodejs-repl-eval.el" "dash.el")
+
  ("/Users/andrew/.emacs.d/" (22546 833 0 0) "snippets/" "site-lisp/" "saveplace.el" "recentf" "README.md" "places" "init.el" "init-sql-settings.el" "init-python-settings.el" "init-packages.el" "init-keybindings.el" "init-js-settings.el" "init-functions.el" "eshell/" "emacs-backup/" "elpa/" "custom.el" "auto-save-list/" "ac-comphist.dat" ".ido.last" ".git/" "#init-packages.el#" "../" "./")
 
  ("/Users/andrew/" (22546 859 0 0) "xkal-syntax-test/" "VirtualBox VMs/" "software-design-101/" "senalysis-data-exchange/" "senalysis-app/" "senalysis-api/" "Public/" "Pictures/" "node_modules/" "Music/" "Movies/" "Library/" "github/" "Downloads/" "Documents/" "Desktop/" "Cargo.toml" "Applications/" ".viminfo" ".vagrant.d/" ".v8flags.4.6.85.31.andrew.json" ".Trash/" ".tmux.conf" ".tern-port" ".ssh/" ".spacemacs" ".slime/" ".rustup/" ".npm/" ".node_repl_history" ".node-gyp/" ".jshintrc" ".ipython/" ".ievms/" ".hgignore_global" ".gnupg/" ".gitignore_global" ".gitexcludes" ".gitconfig" ".emacs.d.spacemacs_bak/" ".emacs.d/" ".DS_Store" ".cups/" ".config/" ".CFUserTextEncoding" ".bash_sessions/" ".bash_profile" ".bash_history" ".babel.json" ".atom/" "../" "./")

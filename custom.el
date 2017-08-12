@@ -30,6 +30,9 @@
    ";; This buffer is for notes you don't want to save, and for Lisp evaluation.
 ;; Happy hacking xkal!!
 ")
+ '(package-selected-packages
+   (quote
+    (window-purpose web-beautify vagrant tern-auto-complete sql-indent slime skewer-mode minimap magit json-mode jquery-doc jedi ipython iedit flymake-jshint flycheck exec-path-from-shell elpy cyberpunk-theme)))
  '(ps-line-number nil)
  '(pyvenv-activate nil)
  '(recentf-mode t)
@@ -118,14 +121,14 @@
  '(js2-instance-member ((t (:foreground "orange"))))
  '(js2-jsdoc-html-tag-name ((t (:foreground "cyan"))))
  '(js2-warning ((t (:underline t))))
- '(linum ((t (:background "#000000" :foreground "#ffff4c" :height 100))))
+ '(linum ((t (:background "dark cyan" :foreground "#ffff4c" :height 100))))
  '(magit-section-title ((t (:foreground "yellow"))) t)
  '(match ((t (:background "#000000" :foreground "yellow"))))
  '(mc/cursor-face ((t (:background "orange" :foreground "#000000" :inverse-video nil))) t)
  '(minibuffer-prompt ((t (:background "#000000" :foreground "green"))))
  '(minimap-active-region-background ((t (:background "gray29"))))
  '(minimap-font-face ((t (:height 50 :family "DejaVu Sans Mono"))))
- '(mode-line ((t (:background "yellow" :foreground "#030303" :box nil))))
+ '(mode-line ((t (:background "green" :foreground "#030303" :box nil))))
  '(mode-line-inactive ((t (:foreground "#f9f9f9" :background "#666666" :box nil))))
  '(nxml-element-local-name ((t (:background "black" :foreground "blue"))))
  '(nxml-text ((t (:foreground "green"))) t)

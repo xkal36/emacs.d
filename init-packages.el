@@ -7,26 +7,26 @@
              '("marmalade" . "http://marmalade-repo.org/packages/"))
 
 (add-to-list 'package-archives
-	         '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/") t)
+             '("melpa" . "https://melpa.org/packages/"))
 
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 
 (add-to-list 'load-path "~/.emacs.d/site-lisp/")
 
-
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+  )
 
 ; list the packages you want
 (setq package-list
-	'(python-environment deferred epc 
-		flycheck ctable jedi concurrent js2-mode jquery-doc simple-httpd
-		slime skewer-mode window-purpose company cyberpunk-theme elpy 
+      '(python-environment deferred sr-speedbar epc multi-term helm jinja2-mode django-mode linum-off nodejs-repl smooth-scrolling
+        flycheck ctable jedi concurrent js2-mode sml-mode jquery-doc simple-httpd web-mode
+		slime skewer-mode window-purpose fill-column-indicator company-quickhelp company cyberpunk-theme elpy 
 		yasnippet pyvenv highlight-indentation find-file-in-project 
 		sql-indent sql exec-path-from-shell ipython iedit vagrant
         auto-complete popup json-mode exec-path-from-shell let-alist magit popup tern tern-auto-complete web-beautify))
 
-
-; activate all the packages
-(package-initialize)
 
 ; fetch the list of packages available 
 (unless package-archive-contents

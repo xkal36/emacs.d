@@ -1,3 +1,9 @@
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (require 'org)
 (require 'ob)
 (require 'saveplace)
@@ -5,10 +11,13 @@
 
 (load "~/.emacs.d/init-packages")
 
+(elpy-enable)
+
 ;; start yasnippet with emacs
 (require 'yasnippet)
 (yas-global-mode 1)
 
+(require 'helm)
 (require 'sr-speedbar)
 (require 'company-quickhelp)
 (require 'jedi)
@@ -18,7 +27,7 @@
 ;;(load "elscreen.el")
 (load "fullscreen.el")
 (load "virtualenv.el")
-;;(load "highlight-beyond-fill-column")
+(load "highlight-beyond-fill-column")
 (load "unbound")
 
 (require 'auto-complete)
@@ -26,7 +35,7 @@
 (require 'fill-column-indicator)
 (ac-config-default)
 
-(add-to-list 'load-path "~/.emacs.d/site-lisp/django-mode")
+(add-to-list 'load-path "~/.emacs.d/ste-lisp/django-mode")
 
 (require 'multi-term)
 (setq multi-term-program "/bin/bash")
@@ -117,8 +126,8 @@
 
 (require 'smooth-scrolling)
 
-(require 'nodejs-repl-eval)
-(define-key js2-mode-map (kbd "C-x C-n") 'nodejs-repl-eval-dwim)
+;;(require 'nodejs-repl-eval)
+;;(define-key js2-mode-map (kbd "C-x C-n") 'nodejs-repl-eval-dwim)
 
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.json$" . js2-mode))
@@ -261,6 +270,26 @@
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
+
+(setq byte-compile-warnings '(not free-vars ))
+
+;; where to look for sml executable (will vary depending on system)
+(setenv "PATH" (concat "/usr/lib/smlnj/bin:" (getenv "PATH")))
+(setq exec-path (cons "/usr/lib/smlnj/bin"  exec-path))
+
+;;(setq-default left-fringe-width 1)
+
+(setq-default right-fringe-width  0)
+
+
+(set-face-attribute 'fringe nil :background "dark cyan")
+
+(add-hook 'term-mode-hook (lambda()
+                            (yas-minor-mode -1)))
+
+(define-key dired-mode-map "c" 'find-file)
+
+(fringe-mode 0)
 
 (provide 'init)
 ;;; init.el ends here
