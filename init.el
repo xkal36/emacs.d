@@ -49,6 +49,7 @@
 
 (require 'linum-off)
 
+(require 'buffer-move)
 
 ;; Set your lisp system and, optionally, some contribs
 (setq inferior-lisp-program "/usr/bin/sbcl")
@@ -291,7 +292,10 @@
 
 (fringe-mode 0)
 
+(global-set-key (kbd "C-c w")     'buf-move-up)
+(global-set-key (kbd "C-c s")   'buf-move-down)
+(global-set-key (kbd "C-c a")   'buf-move-left)
+(global-set-key (kbd "C-c d")  'buf-move-right)
 (provide 'init)
+
 ;;; init.el ends here
-
-

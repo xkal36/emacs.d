@@ -284,6 +284,3 @@ If switch-buffer-ignore-dired is true, also skip directory buffer.
   (interactive)
   (dolist (window (window-at-side-list))
     (quit-window nil window)))
-
-
-

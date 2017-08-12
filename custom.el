@@ -35,6 +35,8 @@
     (window-purpose web-beautify vagrant tern-auto-complete sql-indent slime skewer-mode minimap magit json-mode jquery-doc jedi ipython iedit flymake-jshint flycheck exec-path-from-shell elpy cyberpunk-theme)))
  '(ps-line-number nil)
  '(pyvenv-activate nil)
+ '(realgud:pdb-command-name "python -m pdb")
+ '(gud-pdb-command-name "python -m pdb")
  '(recentf-mode t)
  '(setq show-paren-style t)
  '(show-paren-mode t)

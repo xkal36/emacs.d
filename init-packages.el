@@ -20,15 +20,16 @@
 
 ; list the packages you want
 (setq package-list
-      '(python-environment deferred sr-speedbar epc multi-term helm jinja2-mode django-mode linum-off nodejs-repl smooth-scrolling
+      '(python-environment deferred sr-speedbar epc multi-term helm jinja2-mode django-mode linum-off
+        nodejs-repl smooth-scrolling
         flycheck ctable jedi concurrent js2-mode sml-mode jquery-doc simple-httpd web-mode
-		slime skewer-mode window-purpose fill-column-indicator company-quickhelp company cyberpunk-theme elpy 
-		yasnippet pyvenv highlight-indentation find-file-in-project 
-		sql-indent sql exec-path-from-shell ipython iedit vagrant
+        slime skewer-mode window-purpose fill-column-indicator company-quickhelp company cyberpunk-theme elpy
+	yasnippet pyvenv highlight-indentation find-file-in-project realgud
+	sql-indent sql exec-path-from-shell ipython iedit vagrant
         auto-complete popup json-mode exec-path-from-shell let-alist magit popup tern tern-auto-complete web-beautify))
 
 
-; fetch the list of packages available 
+; fetch the list of packages available
 (unless package-archive-contents
   (package-refresh-contents))
 
