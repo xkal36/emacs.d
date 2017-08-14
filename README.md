@@ -17,19 +17,20 @@ Most of the dependencies are python realted (where I spend most of my time).
 
 Install the required python packages as follows:
 
-  # Either of these
-  pip install rope
-  pip install jedi
-  # flake8 for code checks
-  pip install flake8
-  # importmagic for automatic imports
-  pip install importmagic
-  # and autopep8 for automatic PEP8 formatting
-  pip install autopep8
-  # and yapf for code formatting
-  pip install yapf
+# Either of these
+pip install rope
+pip install jedi
+# flake8 for code checks
+pip install flake8
+# importmagic for automatic imports
+pip install importmagic
+# and autopep8 for automatic PEP8 formatting
+pip install autopep8
+# and yapf for code formatting
+pip install yapf
 
 One-line install: **pip install jedi flake8 importmagic autopep8**
+
 For dependenciess not included here (can't remember them all), emacs  will simply complain that it can't find them or it is not installed etc. 
 
 Simply install whatever package it says it cannot find and you are good to go!
