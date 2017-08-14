@@ -15,8 +15,6 @@ the usual <kbd>C-x</kbd> <kbd>k</kbd>.
 
 Most of the dependencies are python realted (where I spend most of my time).
 
-Install the required python packages as follows:
-
 One-line install: `pip install jedi flake8 importmagic autopep8`
 
 For dependenciess not included here (can't remember them all), emacs  will simply complain that it can't find them or it is not installed etc. 
