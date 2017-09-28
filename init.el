@@ -1,8 +1,15 @@
+
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 (package-initialize)
+
+
+(require 'auto-complete)
+
+(require 'flycheck)
+
 
 (require 'org)
 (require 'ob)
@@ -22,13 +29,15 @@
 (require 'company-quickhelp)
 (require 'jedi)
 
-(require 'powerline)
+;;(require 'powerline)
 
 ;;(load "elscreen.el")
 (load "fullscreen.el")
 (load "virtualenv.el")
-(load "highlight-beyond-fill-column")
+;;(load "highlight-beyond-fill-column")
 (load "unbound")
+
+(require 'fill-column-indicator)
 
 (require 'auto-complete)
 (require 'auto-complete-config)
@@ -60,6 +69,8 @@
 (load "~/.emacs.d/init-functions")
 (load "~/.emacs.d/init-keybindings")
 
+(require 'popup)
+
 
 ;; setting window size upon startup
 (when window-system (set-frame-size (selected-frame) 127 34))
@@ -86,14 +97,22 @@
 
 
 (setq-default fill-column 80)
-(add-hook 'prog-mode-hook 'highlight-beyond-fill-column)
+;;(add-hook 'prog-mode-hook 'highlight-beyond-fill-column)
 
 
 (set-frame-font "DejaVu Sans Mono-10")
 
-(add-to-list 'load-path "/home/xkal/.emacs.d/elpa/js2-mode-20150911.116/")
-(autoload 'js2-mode "js2-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
+
+;; use eslint with js2-mode for jsx files
+(flycheck-add-mode 'javascript-eslint 'js2-mode)
+
+(require 'rjsx-mode)
+
+;; use eslint with rjsx-mode for jsx files
+(flycheck-add-mode 'javascript-eslint 'rjsx-mode)
+
 
 (require 'simple-httpd)
 (require 'skewer-mode)
@@ -103,13 +122,11 @@
 (add-hook 'js-mode-hook 'js2-minor-mode)
 (add-hook 'js2-mode-hook 'ac-js2-mode)
 
+(add-to-list 'company-backends 'company-tern)
 
+(add-to-list 'interpreter-mode-alist '("node" . js2-mode))
 
-(add-hook 'js2-mode-hook (lambda () (tern-mode t)))
-(eval-after-load 'tern
-  '(progn
-     (require 'tern-auto-complete)
-     (tern-ac-setup)))
+(add-hook 'after-init-hook 'global-company-mode)
 
 (require 'jquery-doc)
 (add-hook 'js2-mode-hook 'jquery-doc-setup)
@@ -148,8 +165,6 @@
 (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
 (add-to-list 'exec-path "/usr/local/bin")
 
-;;(require 'flymake-jshint)
-
 
 (add-hook
  'eshell-mode-hook
@@ -178,16 +193,13 @@
    (setenv "TERM" "emacs") ; enable colors
    ))
 
-;; eslint settings:
+(require 'web-mode)
 
 ;; use web-mode for .jsx files
 (add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
 
-;; http://www.flycheck.org/manual/latest/index.html
-(require 'flycheck)
-
-
-;; flycheck is already turned on globally
+;; turn on flychecking globally
+(add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; disable jshint since we prefer eslint checking
 (setq-default flycheck-disabled-checkers
@@ -213,11 +225,11 @@
 
 ;; for better jsx syntax-highlighting in web-mode
 ;; - courtesy of Patrick @halbtuerke
-(defadvice web-mode-highlight-part (around tweak-jsx activate)
-  (if (equal web-mode-content-type "jsx")
-      (let ((web-mode-enable-part-face nil))
-        ad-do-it)
-    ad-do-it))
+;;(defadvice web-mode-highlight-part (around tweak-jsx activate)
+  ;;(if (equal web-mode-content-type "jsx")
+  ;;    (let ((web-mode-enable-part-face nil))
+       ;; ad-do-it)
+    ;;ad-do-it))
 
 
 ;; Change terrible flycheck default keybindings:
@@ -225,32 +237,17 @@
 (define-key flycheck-mode-map (kbd "C-c f n") #'flycheck-next-error)
 (define-key flycheck-mode-map (kbd "C-c f p") #'flycheck-previous-error)
 
-(require 'web-mode)
-
 
 ;; Fix indentation of switch statements:
 (c-set-offset 'case-label '+)
 
 ;;(set-fringe-mode 0)
 
-;; use web-mode for .jsx files
-(add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
 
 ;; disable jshint since we prefer eslint checking
 (setq-default flycheck-disabled-checkers
               (append flycheck-disabled-checkers
                       '(javascript-jshint)))
-
-;; use eslint with web-mode for jsx files
-(flycheck-add-mode 'javascript-eslint 'web-mode)
-
-;; for better jsx syntax-highlighting in web-mode
-;; - courtesy of Patrick @halbtuerke
-(defadvice web-mode-highlight-part (around tweak-jsx activate)
-  (if (equal web-mode-content-type "jsx")
-      (let ((web-mode-enable-part-face nil))
-        ad-do-it)
-    ad-do-it))
 
 
 ;; Set your lisp system and, optionally, some contribs
@@ -285,10 +282,89 @@
 
 (fringe-mode 0)
 
-(global-set-key (kbd "C-c w")     'buf-move-up)
-(global-set-key (kbd "C-c s")   'buf-move-down)
-(global-set-key (kbd "C-c a")   'buf-move-left)
-(global-set-key (kbd "C-c d")  'buf-move-right)
+(global-set-key (kbd "C-c w") 'buf-move-up)
+(global-set-key (kbd "C-c s") 'buf-move-down)
+(global-set-key (kbd "C-c a") 'buf-move-left)
+(global-set-key (kbd "C-c d") 'buf-move-right)
+
+
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+
+(require 'spaceline-config)
+(spaceline-spacemacs-theme)
+
+(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+
+
+(use-package spaceline-all-the-icons 
+             :after spaceline
+             :config (spaceline-all-the-icons-theme))
+
+(spaceline-all-the-icons--setup-neotree) ;; Enable Neotree mode line
+(spaceline-all-the-icons--setup-git-ahead)
+
+;; use local eslint from node_modules before global
+;; http://emacs.stackexchange.com/questions/21205/flycheck-with-file-relative-eslint-executable
+(defun my/use-eslint-from-node-modules ()
+  (let* ((root (locate-dominating-file
+                (or (buffer-file-name) default-directory)
+                "node_modules"))
+         (eslint (and root
+                      (expand-file-name "node_modules/eslint/bin/eslint.js"
+                                        root))))
+    (when (and eslint (file-executable-p eslint))
+      (setq-local flycheck-javascript-eslint-executable eslint))))
+(add-hook 'flycheck-mode-hook #'my/use-eslint-from-node-modules)
+
+;; adjust indents for web-mode to 2 spaces
+(defun my-web-mode-hook ()
+  "Hooks for Web mode. Adjust indents"
+  ;;; http://web-mode.org/
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2))
+(add-hook 'web-mode-hook  'my-web-mode-hook)
+
+;; for better jsx syntax-highlighting in web-mode
+;; - courtesy of Patrick @halbtuerke
+(defadvice web-mode-highlight-part (around tweak-jsx activate)
+  (if (equal web-mode-content-type "jsx")
+      (let ((web-mode-enable-part-face nil))
+        ad-do-it)
+    ad-do-it))
+
+(setq flycheck-xml-parser 'flycheck-parse-xml-region)
+
+(with-current-buffer (get-buffer " *Echo Area 0*")                             ; the leading space character is correct
+  (setq-local face-remapping-alist '((default (:height 1.4
+                                                       ) variable-pitch)))) ; etc.
+
+(add-hook 'minibuffer-setup-hook 'my-minibuffer-setup)
+(defun my-minibuffer-setup ()
+  (set (make-local-variable 'face-remapping-alist)
+       '((default :height 1.4))))
+
+(windmove-default-keybindings)
+(setq org-replace-disputed-keys t)
+
+(require 'highlight-symbol)
+(global-set-key [(control f3)] 'highlight-symbol)
+(global-set-key [f3] 'highlight-symbol-next)
+(global-set-key [(shift f3)] 'highlight-symbol-prev)
+(global-set-key [(meta f3)] 'highlight-symbol-query-replace)
+
+
+(require 'undo-tree)
+(defun undo-tree-visualizer-update-linum (&rest args)
+  (linum-update undo-tree-visualizer-parent-buffer))
+(advice-add 'undo-tree-visualize-undo :after #'undo-tree-visualizer-update-linum)
+(advice-add 'undo-tree-visualize-redo :after #'undo-tree-visualizer-update-linum)
+(advice-add 'undo-tree-visualize-undo-to-x :after #'undo-tree-visualizer-update-linum)
+(advice-add 'undo-tree-visualize-redo-to-x :after #'undo-tree-visualizer-update-linum)
+(advice-add 'undo-tree-visualizer-mouse-set :after #'undo-tree-visualizer-update-linum)
+(advice-add 'undo-tree-visualizer-set :after #'undo-tree-visualizer-update-linum)
+
+
 (provide 'init)
 
 ;;; init.el ends here
