@@ -44,7 +44,7 @@
  '(setq show-paren-style t)
  '(show-paren-mode t)
  '(spaceline-all-the-icons-file-name-highlight nil)
- '(spaceline-all-the-icons-highlight-file-name t)
+ '(spaceline-all-the-icons-highlight-file-name nil)
  '(speedbar-use-images nil)
  '(sr-speedbar-default-width 25)
  '(sr-speedbar-max-width 25)
