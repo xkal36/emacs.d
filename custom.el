@@ -153,7 +153,7 @@
  '(secondary-selection ((t (:background "purple"))))
  '(show-paren-match ((t (:background "dark orange" :foreground "#000000"))))
  '(spaceline-flycheck-error ((t (:distant-foreground "#A20C41" :foreground "red"))))
- '(spaceline-highlight-face ((t (:background "#ffff00" :foreground "#3E3D31" :inherit (quote mode-line)))))
+ '(spaceline-highlight-face ((t (:background "#07A47C" :foreground "#3E3D31" :inherit (quote mode-line)))))
  '(speedbar-file-face ((t (:foreground "blue"))))
  '(speedbar-selected-face ((t (:foreground "blue" :underline t))))
  '(speedbar-separator-face ((t (:background "cyan" :foreground "black" :overline "gray"))))
