@@ -34,7 +34,7 @@
 ; list the packages you want
 (setq package-list
       '(auto-complete python-environment deferred sr-speedbar epc multi-term helm jinja2-mode linum-off
-        nodejs-repl smooth-scrolling ac-js2 company-tern neotree  all-the-icons flycheck-tip
+        nodejs-repl smooth-scrolling ac-js2 company-tern neotree  all-the-icons restclient
         flycheck ctable jedi concurrent js2-mode sml-mode jquery-doc simple-httpd web-mode undo-tree
         slime skewer-mode window-purpose fill-column-indicator company-quickhelp company cyberpunk-theme elpy git-gutter
         yasnippet pyvenv highlight-indentation find-file-in-project realgud rjsx-mode use-package highlight-symbol
@@ -50,5 +50,3 @@
 (dolist (package package-list)
   (unless (package-installed-p package)
     (package-install package)))
-
-

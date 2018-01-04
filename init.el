@@ -4,7 +4,6 @@
 
 (require 'flycheck)
 
-
 (require 'org)
 (require 'ob)
 (require 'saveplace)
@@ -356,7 +355,35 @@
 (advice-add 'undo-tree-visualizer-mouse-set :after #'undo-tree-visualizer-update-linum)
 (advice-add 'undo-tree-visualizer-set :after #'undo-tree-visualizer-update-linum)
 
+(global-set-key (kbd "C-x g") 'magit-status)
+
+(setq ac-max-width 0.5)
+
+
+(global-set-key [f5] 'neotree-toggle)
+(global-set-key [f6] 'neotree-dir)
+
+(require 'isend-mode)
+
+(defun send-buffer-to-ipython ()
+"Send current buffer to the running ipython process."
+(interactive)
+(let* ((ipython-buffer "*terminal<1>*") ; the buffer name of your running terminal
+       (proc (get-buffer-process ipython-buffer)))
+  (unless proc
+    (error "no process found"))
+  (save-buffer)
+  (process-send-string proc
+                       (format "execfile(\"%s\")\n" (buffer-file-name)))
+  (pop-to-buffer ipython-buffer)      ; show ipython and select it
+  ;; (display-buffer ipython-buffer)  ; show ipython but don't select it
+  ))
+
+
+(global-set-key (kbd "C-x p") 'send-buffer-to-ipython)
+
 
 (provide 'init)
+
 
 ;;; init.el ends here

@@ -13,6 +13,7 @@
  '(c-label-minimum-indentation 4)
  '(column-number-mode t)
  '(company-auto-complete t)
+ '(company-auto-complete-chars (quote (41)))
  '(company-quickhelp-delay 0.4)
  '(custom-enabled-themes (quote (cyberpunk)))
  '(custom-safe-themes
@@ -31,11 +32,12 @@
    ";; This buffer is for notes you don't want to save, and for Lisp evaluation.
 ;; Happy hacking xkal!!
 ")
+ '(js-indent-level 2)
  '(neo-window-fixed-size nil)
  '(package-selected-packages
    (quote
-    (window-purpose web-beautify vagrant tern-auto-complete sql-indent slime skewer-mode minimap magit json-mode jquery-doc jedi ipython iedit flycheck exec-path-from-shell elpy cyberpunk-theme)))
- '(powerline-text-scale-factor 1.4)
+    (isend isend-mode window-purpose web-beautify vagrant tern-auto-complete sql-indent slime skewer-mode minimap magit json-mode jquery-doc jedi ipython iedit flycheck exec-path-from-shell elpy cyberpunk-theme)))
+ '(powerline-text-scale-factor 1.2)
  '(ps-line-number nil)
  '(pyvenv-activate nil)
  '(realgud:ipdb-command-name "python -m ipdb")
@@ -46,13 +48,16 @@
  '(spaceline-all-the-icons-file-name-highlight nil)
  '(spaceline-all-the-icons-highlight-file-name nil)
  '(speedbar-use-images nil)
+ '(sql-ms-program "osql")
  '(sr-speedbar-default-width 25)
  '(sr-speedbar-max-width 25)
  '(sr-speedbar-right-side nil)
  '(sr-speedbar-width 25 t)
  '(term-default-fg-color nil)
+ '(term-unbind-key-list (quote ("C-z" "C-x" "C-c" "C-h" "C-y" "<ESC>")))
  '(tool-bar-mode nil)
- '(uniquify-buffer-name-style (quote post-forward) nil (uniquify)))
+ '(uniquify-buffer-name-style (quote post-forward) nil (uniquify))
+ '(web-mode-code-indent-offset 4))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -123,13 +128,14 @@
  '(ido-virtual ((t (:inherit font-lock-builtin-face :height 1.5))))
  '(info-header-node ((t (:inherit info-node :height 1.0))))
  '(isearch ((t (:background "dark orange" :foreground "#000000"))))
- '(js2-error ((t (:foreground "Red"))))
+ '(js2-error ((t (:foreground "MediumPurple1"))))
  '(js2-external-variable ((t (:foreground "orange"))))
  '(js2-function-call ((t (:foreground "#ff1493"))))
  '(js2-instance-member ((t (:foreground "orange"))))
  '(js2-jsdoc-html-tag-name ((t (:foreground "cyan"))))
  '(js2-warning ((t (:underline t))))
  '(linum ((t (:background "dark cyan" :foreground "#ffff4c" :height 100))))
+ '(magit-diff-file-heading-selection ((t (:background "yellow1" :foreground "gray21" :weight bold))))
  '(magit-section-title ((t (:foreground "yellow"))) t)
  '(match ((t (:background "#000000" :foreground "yellow"))))
  '(mc/cursor-face ((t (:background "orange" :foreground "#000000" :inverse-video nil))) t)
